@@ -50,9 +50,28 @@
   <div class="flex min-h-screen flex-col">
     <header class="sticky top-0 z-40 border-b bg-background">
       <div class="container mx-auto flex h-16 items-center justify-between py-4 px-4 md:px-6">
-        <div class="flex items-center gap-2">
-          <i class="fa-solid fa-car text-blue-600 dark:text-blue-400 text-xl"></i>
-          <span class="text-lg font-bold">Future Mobility Research Center</span>
+        <div class="flex items-center gap-4">
+          <!-- Logos and Title Container -->
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-car text-blue-600 dark:text-blue-400 text-xl"></i>
+            <span class="text-lg font-bold">Future Mobility Research Center</span>
+          </div>
+          <div class="flex items-center gap-4">
+              <img
+                src="images/path-logo.jpg"
+                alt="PATH Logo"
+              width="60"
+              height="30"
+              class="object-contain hidden sm:block"
+              />
+              <img
+                src="images/caltrans-logo.png"
+                alt="Caltrans Logo"
+              width="60"
+              height="30"
+              class="object-contain hidden sm:block"
+            />
+          </div>
         </div>
         <div class="flex items-center gap-4">
           <nav class="hidden md:flex items-center gap-6">
@@ -84,56 +103,42 @@
     </header>
 
     <main class="flex-1">
-      <section class="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-b from-blue-50 to-white dark:from-slate-900 dark:to-slate-800">
-        <div class="container mx-auto px-4 md:px-6">
-          <div class="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_500px]">
-            <div class="flex flex-col justify-center space-y-4">
-              <div class="space-y-2">
-                <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl">
-                  Shaping the Future of Transportation
-                </h1>
-                <p class="max-w-[600px] text-muted-foreground md:text-xl">
-                  The Future Mobility Research Center at UC Berkeley's PATH program and Caltrans is dedicated to advancing
-                  transportation systems through innovative research and technology.
-                </p>
-              </div>
-              <div class="flex flex-col gap-2 min-[400px]:flex-row">
-                <a href="#research" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600">
-                  Explore Our Research
-                  <i class="fa-solid fa-chevron-right ml-2 text-xs"></i>
-                </a>
-                <a href="#contact" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800">
-                  Contact Us
-                </a>
-              </div>
-              <div class="flex items-center justify-start space-x-6">
-                <img
-                  src="images/path-logo.jpg"
-                  alt="PATH Logo"
-                  width="120"
-                  height="60"
-                  class="object-contain"
-                />
-                <img
-                  src="images/caltrans-logo.png"
-                  alt="Caltrans Logo"
-                  width="120"
-                  height="60"
-                  class="object-contain"
-                />
-              </div>
-              <div class="flex items-center space-x-2 text-sm text-muted-foreground">
-                <i class="fa-solid fa-graduation-cap text-sm"></i>
-                <span>A research initiative of UC Berkeley and Caltrans</span>
-              </div>
-            </div>
-            <div class="flex items-center justify-center">
+      <section class="w-full py-12 md:py-24 lg:py-32 xl:py-48 relative">
+        <!-- Background gif with overlay -->
+        <div class="absolute inset-0 z-0">
               <img 
                 src="images/hero-traffic.gif" 
                 alt="Night time traffic on a highway with city lights" 
-                class="rounded-lg object-cover w-full max-w-[500px] h-[400px]"
+            class="w-full h-full object-cover"
                 loading="eager"
               >
+          <!-- Dark overlay to ensure text readability -->
+          <div class="absolute inset-0 bg-black/50"></div>
+        </div>
+
+        <div class="container mx-auto px-4 md:px-6 relative z-10">
+          <div class="flex flex-col justify-center space-y-4 max-w-3xl">
+            <div class="space-y-2">
+              <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl text-white">
+                Shaping the Future of Transportation
+              </h1>
+              <p class="max-w-[600px] text-slate-200 md:text-xl">
+                The Future Mobility Research Center at UC Berkeley's PATH program and Caltrans is dedicated to advancing
+                transportation systems through innovative research and technology.
+              </p>
+            </div>
+            <div class="flex flex-col gap-2 min-[400px]:flex-row">
+              <a href="#research" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 bg-blue-600 text-white hover:bg-blue-700">
+                Explore Our Research
+                <i class="fa-solid fa-chevron-right ml-2 text-xs"></i>
+              </a>
+              <a href="#contact" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 border border-white text-white hover:bg-white/10">
+                Contact Us
+              </a>
+            </div>
+            <div class="flex items-center space-x-2 text-sm text-white">
+              <i class="fa-solid fa-graduation-cap text-sm"></i>
+              <span>A research initiative of UC Berkeley and Caltrans</span>
             </div>
           </div>
         </div>
