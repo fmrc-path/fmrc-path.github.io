@@ -53,7 +53,9 @@
         <div class="flex items-center gap-4">
           <!-- Logos and Title Container -->
           <div class="flex items-center gap-2">
-            <i class="fa-solid fa-car text-blue-600 dark:text-blue-400 text-xl"></i>
+            <a href="https://path.berkeley.edu/" class="flex items-center gap-2" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-car text-blue-600 dark:text-blue-400 text-xl"></i>
+            </a>
             <span class="text-lg font-bold">Future Mobility Research Center</span>
           </div>
           <div class="flex items-center gap-4">
@@ -77,6 +79,7 @@
           <nav class="hidden md:flex items-center gap-6">
             <a href="#about" class="text-sm font-medium hover:underline underline-offset-4">About</a>
             <a href="#research" class="text-sm font-medium hover:underline underline-offset-4">Research</a>
+            <a href="#facilities" class="text-sm font-medium hover:underline underline-offset-4">Facilities</a>
             <a href="#team" class="text-sm font-medium hover:underline underline-offset-4">Team</a>
             <a href="#media" class="text-sm font-medium hover:underline underline-offset-4">Media</a>
             <a href="#contact" class="text-sm font-medium hover:underline underline-offset-4">Contact</a>
@@ -95,6 +98,7 @@
         <div class="container mx-auto px-4 py-3 space-y-1">
           <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">About</a>
           <a href="#research" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Research</a>
+          <a href="#facilities" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Facilities</a>
           <a href="#team" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Team</a>
           <a href="#media" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Media</a>
           <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Contact</a>
@@ -123,7 +127,7 @@
                 Shaping the Future of Transportation
               </h1>
               <p class="max-w-[600px] text-slate-200 md:text-xl">
-                The Future Mobility Research Center at UC Berkeley's PATH program and Caltrans is dedicated to advancing
+                The Future Mobility Research Center at UC Berkeley's <a href="https://path.berkeley.edu/" class="text-blue-300 hover:text-blue-200" target="_blank" rel="noopener noreferrer">Partners for Advanced Transportation Technology (PATH)</a> program and Caltrans is dedicated to advancing
                 transportation systems through innovative research and technology.
               </p>
             </div>
@@ -156,8 +160,7 @@
                 Partners for Advanced Transportation Technology
               </h2>
               <p class="max-w-[700px] text-muted-foreground md:text-xl">
-                The Future Mobility Research Center is hosted by PATH (Partners for Advanced Transportation
-                Technology) at UC Berkeley and Caltrans, a leading research and development program addressing the challenges
+                The Future Mobility Research Center is hosted by <a href="https://path.berkeley.edu/" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Partners for Advanced Transportation Technology (PATH)</a> at UC Berkeley and Caltrans, a leading research and development program addressing the challenges
                 facing transportation systems in California and beyond.
               </p>
             </div>
@@ -295,6 +298,62 @@
               Collaborate With Us
               <i class="fa-solid fa-chevron-right ml-2 text-xs"></i>
             </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="facilities" class="w-full py-12 md:py-24 lg:py-32">
+        <div class="container mx-auto px-4 md:px-6">
+          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+            <div class="space-y-2">
+              <div class="inline-block rounded-lg bg-blue-100 px-3 py-1 text-sm text-blue-800 dark:bg-blue-900 dark:text-blue-200">Facilities</div>
+              <h2 class="text-3xl font-bold tracking-tighter md:text-4xl">
+                Our Research Facilities
+              </h2>
+              <p class="max-w-[700px] text-muted-foreground md:text-xl">
+                State-of-the-art facilities where we develop and test innovative transportation solutions.
+              </p>
+            </div>
+            <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 md:grid-cols-2">
+              <!-- El Camino Real Testbed -->
+              <div class="card overflow-hidden">
+                <a href="https://caconnectedvehicletestbed.org/home" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="block">
+                  <div class="relative h-48">
+                    <img 
+                      src="images/el-camino-real.png" 
+                      alt="El Camino Real Testbed" 
+                      class="w-full h-full object-cover"
+                    >
+                  </div>
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 hover:text-blue-600 dark:hover:text-blue-400">El Camino Real Testbed</h3>
+                    <p class="text-sm text-muted-foreground">
+                      A 7-mile connected corridor along El Camino Real in the heart of Silicon Valley, equipped with advanced traffic signal systems and sensing technologies. This living laboratory enables research in traffic signal control, connected vehicles, and multi-modal transportation management.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              
+              <!-- Richmond Field Station -->
+              <div class="card overflow-hidden">
+                <div class="relative h-48">
+                  <img 
+                    src="images/richmond-field-station.jpg" 
+                    alt="Richmond Field Station" 
+                    class="w-full h-full object-cover"
+                  >
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Richmond Field Station</h3>
+                  <p class="text-sm text-muted-foreground">
+                    A 170-acre research facility featuring dedicated spaces for transportation technology development and testing. The site includes specialized laboratories, a vehicle testing area, and a smart mobility testbed for autonomous vehicle and infrastructure research.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -680,7 +739,7 @@
             <span class="text-lg font-bold">Future Mobility Research Center</span>
           </div>
           <p class="text-center text-sm text-muted-foreground md:text-left">
-            A research initiative of UC Berkeley's Partners for Advanced Transportation Technology (PATH) and Caltrans
+            A research initiative of UC Berkeley's <a href="https://path.berkeley.edu/" class="hover:underline" target="_blank" rel="noopener noreferrer">Partners for Advanced Transportation Technology (PATH)</a> and Caltrans
           </p>
         </div>
         <div class="flex flex-col items-center gap-2 md:items-end">
